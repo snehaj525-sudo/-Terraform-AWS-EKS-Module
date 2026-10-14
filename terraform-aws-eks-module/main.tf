@@ -15,7 +15,7 @@ terraform {
     bucket         = "Sneha-terraform-state-bucket"
     key            = "eks/terraform.tfstate"
     region         = "ap-south-1"
-    dynamodb_table = "REPLACE_ME-terraform-locks"
+    dynamodb_table = "Sneha-terraform-locks"
     encrypt        = true
   }
 }
