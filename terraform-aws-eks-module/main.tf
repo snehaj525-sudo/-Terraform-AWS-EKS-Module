@@ -12,7 +12,7 @@ terraform {
   # Kept as a separate backend.tf block pattern so this module can also be
   # consumed with a different backend (local, Terraform Cloud, etc).
   backend "s3" {
-    bucket         = "REPLACE_ME-terraform-state-bucket"
+    bucket         = "Sneha-terraform-state-bucket"
     key            = "eks/terraform.tfstate"
     region         = "ap-south-1"
     dynamodb_table = "REPLACE_ME-terraform-locks"
