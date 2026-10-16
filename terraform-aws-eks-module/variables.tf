@@ -40,6 +40,9 @@ variable "cluster_version" {
   default     = "1.30"
 }
 
+# t3.medium chosen as a cost-effective default for dev/test; bump to
+# m5.large or larger for production workloads with sustained CPU needs
+
 variable "node_instance_types" {
   description = "EC2 instance types for the managed node group"
   type        = list(string)
